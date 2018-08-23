@@ -1,0 +1,49 @@
+OrdererOrgs:
+  - Name: hyc
+    Domain: example.com
+    Specs:
+      - Hostname: hyc0
+      - Hostname: hyc1
+      - Hostname: hyc2
+
+PeerOrgs:
+  - Name: chenman
+    Domain: chenman.example.com
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+
+  - Name: lixingxing
+    Domain: lixingxing.example.com
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+    Specs:
+      - Hostname: ly
+        CommonName: ly1314.lixingxing.example.com
+      - Hostname: mm
+      - Hostname: xx
+#foo27  bar baz
+
+  - Name: Org3
+    Domain: org3.example.com
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+
+  - Name: Org4
+    Domain: org4.example.com
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+
+  - Name: Org5
+    Domain: org5.example.com
+    Template:
+      Count: 2
+    Users:
+      Count: 1
