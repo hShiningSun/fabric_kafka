@@ -35,7 +35,7 @@ services:
     image: hyperledger/fabric-peer
     environment:
       - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
-      - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=172.31.159.129:5984
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=192.168.56.115:5984
 
       - CORE_PEER_ID=peer0.chenman.example.com
       - CORE_PEER_NETWORKID=fabric_kafka
