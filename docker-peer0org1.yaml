@@ -23,10 +23,10 @@ services:
       - FABRIC_CA_SERVER_CA_NAME=ca
       - FABRIC_CA_SERVER_TLS_ENABLED=false
       - FABRIC_CA_SERVER_TLS_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.chenman.example.com-cert.pem
-      - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/c2bc9a64ab5b7ac6e3075aab965b7a380302d804732a29dde605af1e5c4f73b4_sk
+      - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/2d92190f9582ede91913cf86a827c952d238189a2fd353c844087f910dfd63f8_sk
     ports:
       - "7054:7054"
-    command: sh -c 'fabric-ca-server start --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.chenman.example.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/c2bc9a64ab5b7ac6e3075aab965b7a380302d804732a29dde605af1e5c4f73b4_sk -b admin:adminpw -d'
+    command: sh -c 'fabric-ca-server start --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.chenman.example.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/2d92190f9582ede91913cf86a827c952d238189a2fd353c844087f910dfd63f8_sk -b admin:adminpw -d'
     volumes:
       - ./crypto-config/peerOrganizations/chenman.example.com/ca/:/etc/hyperledger/fabric-ca-server-config
 
