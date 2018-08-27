@@ -79,7 +79,7 @@ services:
         aliases:
           - fabric_kafka
     extra_hosts:
-     - "hyc0.example.com:107"
+     - "hyc0.example.com:198"
      - "hyc1.example.com:192.168.56.114"
      - "hyc2.example.com:192.168.56.116"
 
@@ -110,7 +110,7 @@ services:
     depends_on:
       - peer0.chenman.example.com
     extra_hosts:
-     - "hyc0.example.com:107"
+     - "hyc0.example.com:198"
      - "hyc1.example.com:192.168.56.114"
      - "hyc2.example.com:192.168.56.116"
      - "peer0.chenman.example.com:192.168.56.115"
